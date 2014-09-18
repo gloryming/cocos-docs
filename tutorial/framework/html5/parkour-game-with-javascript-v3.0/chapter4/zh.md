@@ -65,14 +65,14 @@ var g_resources = [
 
 这里我们添加了两个全局变量，**PlayGB_png**和**runner_png**。现在，当我们想要在js文件中创建一个精灵的时候，我们可以很容易地获得这些变量。
 
-因为我们要添加四个javascript文件：PlayScene.js, AnimaitonLayer.js, BackgroundLayer.js 和StatusLayer.js。我们需要告诉Cocos2d-x引擎在游戏开始的时候去载入这些文件。所以我们必须改变**project.json** 来添加更多的资源文件：
+因为我们要添加四个javascript文件：PlayScene.js, AnimaitonLayer.js, BackgroundLayer.js 和StatusLayer.js。我们需要告诉Cocos2d-JS引擎在游戏开始的时候去载入这些文件。所以我们必须改变**project.json** 来添加更多的资源文件：
 
 ```
  "jsList" : [
         "src/resource.js",
         "src/app.js",
         "src/AnimationLayer.js",
-        "src/BackgroundLayer",
+        "src/BackgroundLayer.js",
         "src/PlayScene.js",
         "src/StatusLayer.js"
     ]
